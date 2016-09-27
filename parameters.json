@@ -5,7 +5,7 @@
      "adminPassword": {
       "reference": {
         "keyVault": {
-          "id": "/subscriptions/8e0b1ae5-170f-4c09-a153-a1fce6a7e6a1/resourceGroups/RG1/providers/Microsoft.KeyVault/vaults/rg1-kv"
+          "id": "/subscriptions/-Subscription ID here-/resourceGroups/RG1/providers/Microsoft.KeyVault/vaults/rg1-kv"
         },
         "secretName": "adminPwd"
       }
