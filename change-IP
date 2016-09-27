@@ -1,0 +1,6 @@
+$nic = Get-AzureRmNetworkInterface -ResourceGroupName rg1 -Name NIC01
+    $nic.IpConfigurations[0].PrivateIpAddress = "10.0.0.7"
+    $nic.IpConfigurations[0].PrivateIpAllocationMethod = "Static"
+    $nic.Tag = @{Name = "New name"; Value = "New Value"}
+    Set-AzureRmNetworkInterface -NetworkInterface $nic
+    
